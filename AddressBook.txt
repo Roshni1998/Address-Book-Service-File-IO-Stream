@@ -1,0 +1,2 @@
+first name, last name, address, city, state, zip code, mobile No, emailId
+[Roshni, Mali, Shastri Circle, Udaipur, Rajasthan, 12345, 9898989898, roshni@gmail.com]
