@@ -26,6 +26,18 @@ public class AddressBookMain {
 				System.out.println(a.getId() +", "+ a.getFirstName() +", "+ a.getLastName() +", "+ a.getAddress() +", "+ a.getCity() +", "+
 			                       a.getState() +", "+ a.getZipNo() +", "+ a.getMobileNo() +", "+ a.getEmailId());
 			}
+			AddressBook addressBook = new AddressBook();
+			addressBook.setId(1);
+			addressBook.setFirstName("Geeta");
+			addressBook.setLastName("Malhotra");
+			addressBook.setAddress("Shastri Circle");
+			addressBook.setCity("Udaipur");
+			addressBook.setState("Rajasthan");
+			addressBook.setZipNo("234546");
+			addressBook.setMobileNo("9879879877");
+			addressBook.setEmailId("geeta@gmail.com");
+			mapper.writeValue(new File("D:\\Development\\Eclipse_Workspace\\jsonpractice\\src\\main\\java\\bridgelabz\\AddressBook.json"), addressBook);
+			inputStream.close();
 		} catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (JsonParseException e) {
